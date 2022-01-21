@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1137585145278156393}
   - component: {fileID: 2895098642970983075}
   - component: {fileID: 1155231089446326319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MyTile2_HF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
