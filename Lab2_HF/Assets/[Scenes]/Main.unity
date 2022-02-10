@@ -144,7 +144,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -224,7 +224,7 @@ PrefabInstance:
     - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -304,7 +304,7 @@ PrefabInstance:
     - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -384,7 +384,7 @@ PrefabInstance:
     - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -464,7 +464,7 @@ PrefabInstance:
     - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -777,7 +777,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -857,7 +857,7 @@ PrefabInstance:
     - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -937,7 +937,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -1138,7 +1138,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -1218,7 +1218,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -1298,7 +1298,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -1464,7 +1464,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -1544,7 +1544,7 @@ PrefabInstance:
     - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -1620,11 +1620,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MyTile2_HF (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -1704,7 +1699,7 @@ PrefabInstance:
     - target: {fileID: 7368119822164135246, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7857375470267652084, guid: 8d0a1ee27ff47ed48a441064ca8791e8,
         type: 3}
@@ -1784,7 +1779,7 @@ PrefabInstance:
     - target: {fileID: 3687753823195994998, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4064032731961475532, guid: 0d924a36b458a5c44a64958837033b63,
         type: 3}
@@ -1915,7 +1910,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000,
+      objectReference: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000,
         type: 0}
     - target: {fileID: 2834354358214280437, guid: 8aa9c32f13cd4bb499deabe79babff1e,
         type: 3}
