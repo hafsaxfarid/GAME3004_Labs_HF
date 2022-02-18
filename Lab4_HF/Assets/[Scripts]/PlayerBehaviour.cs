@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     private CharacterController playerController;
+    public UIController uiController;
 
     [Header("Movemnt")]
     public float maxSpeed = 10.0f;
@@ -52,5 +53,13 @@ public class PlayerBehaviour : MonoBehaviour
     {
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Hazard"))
+        {
+            uiController.TakeDamage(5);
+        }
     }
 }
