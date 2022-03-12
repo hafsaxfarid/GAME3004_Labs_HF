@@ -211,8 +211,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd70429f91e961a4f9b5267c77a9f9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 10
+  controlSensitivity: 0
   playerBody: {fileID: 2834354358214280433}
+  rightJoystick: {fileID: 0}
 --- !u!1 &2834354358214280437
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,9 +226,9 @@ GameObject:
   - component: {fileID: 2834354358214280434}
   - component: {fileID: 2834354358214280435}
   - component: {fileID: 2834354358214280399}
-  - component: {fileID: 2834354358214280432}
   - component: {fileID: 1599297636}
   - component: {fileID: 3593767542470388097}
+  - component: {fileID: 2834354358214280432}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -321,29 +322,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2834354358214280432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2834354358214280437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea7a0c7ff8f43ca409f223d635d687e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiController: {fileID: 0}
-  maxSpeed: 10
-  gravity: -30
-  jumpHeight: 3
-  velocity: {x: 0, y: 0, z: 0}
-  groundCheck: {fileID: 2834354358105567762}
-  groundRadius: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 64
-  isGounded: 0
 --- !u!136 &1599297636
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -374,3 +352,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2834354358214280432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834354358214280437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7a0c7ff8f43ca409f223d635d687e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiController: {fileID: 0}
+  maxSpeed: 10
+  gravity: -30
+  jumpHeight: 3
+  velocity: {x: 0, y: 0, z: 0}
+  groundCheck: {fileID: 2834354358105567762}
+  groundRadius: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  isGounded: 0
+  leftJoystick: {fileID: 0}
+  onScreenControls: {fileID: 0}
