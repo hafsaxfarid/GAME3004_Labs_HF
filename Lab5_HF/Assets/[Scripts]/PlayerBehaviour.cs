@@ -24,7 +24,6 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject onScreenControls;
     public GameObject miniMap;
 
-
     void Start()
     {
         playerController = GetComponent<CharacterController>();
