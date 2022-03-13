@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
         "name": "ca.hxf.lab5_hf",
-        "processId": 3070,
+        "processId": 3528,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -36,6 +36,12 @@
             "deviceId": "emulator-5554",
             "name": "ca.hxf.lab5_hf",
             "processId": 3070,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.hxf.lab5_hf",
+            "processId": 3528,
             "exited": false
         }
     ],
