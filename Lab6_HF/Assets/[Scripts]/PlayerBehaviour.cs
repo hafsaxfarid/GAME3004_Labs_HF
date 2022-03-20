@@ -27,6 +27,11 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         playerController = GetComponent<CharacterController>();
+
+        if (Application.platform != RuntimePlatform.Android)
+        {
+            onScreenControls.SetActive(false);
+        }
     }
 
     void Update()
@@ -52,6 +57,12 @@ public class PlayerBehaviour : MonoBehaviour
         // applies gravity
         velocity.y += gravity * Time.deltaTime;
         playerController.Move(velocity * Time.deltaTime);
+
+        // minimap toggle
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            miniMap.SetActive(!miniMap.activeInHierarchy);
+        }
     }
 
     private void OnDrawGizmos()

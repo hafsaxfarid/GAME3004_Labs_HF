@@ -15,17 +15,29 @@ public class CameraController : MonoBehaviour
     
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
+        if (Application.platform != RuntimePlatform.Android)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         controlSensitivity = 3f;
     }
 
     void Update()
     {
-        //float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        //float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-        
-        float horizontal = rightJoystick.Horizontal * controlSensitivity;
-        float vertical = rightJoystick.Vertical * controlSensitivity;
+        float horizontal;
+        float vertical;
+
+        if (Application.platform != RuntimePlatform.Android)
+        {
+            horizontal = Input.GetAxis("Mouse X") * controlSensitivity;
+            vertical = Input.GetAxis("Mouse Y") * controlSensitivity;
+        }
+        else
+        {
+            horizontal = rightJoystick.Horizontal * controlSensitivity;
+            vertical = rightJoystick.Vertical * controlSensitivity;
+        }
 
         XRotation -= vertical;
         XRotation = Mathf.Clamp(XRotation, -90.0f, 90.0f);

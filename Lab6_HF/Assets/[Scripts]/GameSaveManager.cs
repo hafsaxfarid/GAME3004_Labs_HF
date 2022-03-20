@@ -8,15 +8,34 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
 [System.Serializable]
-class SaveData
+public class SaveData
 {
-    public float playerPositionX;
-    public float playerPositionY;
-    public float playerPositionZ;
+    public float[] playerPosition;
+    public float[] playerRotation;
+
+    public SaveData()
+    {
+        playerPosition = new float[3];
+        playerRotation = new float[3];
+    }
 }
 
 public class GameSaveManager : MonoBehaviour
 {
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            SaveGame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadGame();
+        }
+    }
+
     // SAVEING + LOADING using Binary Formatting
     public Transform player;
     void SaveGame()
@@ -24,11 +43,13 @@ public class GameSaveManager : MonoBehaviour
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/MySaveData.dat");
         SaveData data = new SaveData();
-        data.playerPositionX = player.position.x;
-        data.playerPositionY = player.position.y;
-        data.playerPositionZ = player.position.z;
+        data.playerPosition = new[] { player.position.x, player.position.y, player.position.z } ;
+        data.playerRotation = new[] { player.rotation.eulerAngles.x, player.rotation.eulerAngles.y, player.rotation.eulerAngles.z } ;
+        
         bf.Serialize(file, data);
+        
         file.Close();
+        
         Debug.Log("Game data saved!");
     }
     void LoadGame()
@@ -39,13 +60,16 @@ public class GameSaveManager : MonoBehaviour
             FileStream file = File.Open(Application.persistentDataPath + "/MySaveData.dat", FileMode.Open);
             SaveData data = (SaveData)bf.Deserialize(file);
             file.Close();
-            var x = data.playerPositionX;
-            var y = data.playerPositionY;
-            var z = data.playerPositionZ;
+            //Vector3 playerPosition  = new Vector3(data.playerPosition[0], data.playerPosition[1], data.playerPosition[2]);
+            //Quaternion playerRotation = Quaternion.Euler(data.playerRotation[0], data.playerRotation[1], data.playerRotation[2]);
 
+            var xR = data.playerRotation[0];
+            var yR = data.playerRotation[1];
+            var zR = data.playerRotation[2];
 
             player.gameObject.GetComponent<CharacterController>().enabled = false;
-            player.position = new Vector3(x, y, z);
+            player.position = new Vector3(data.playerPosition[0], data.playerPosition[1], data.playerPosition[2]);
+            player.rotation = Quaternion.Euler(data.playerRotation[0], data.playerRotation[1], data.playerRotation[2]);
             player.gameObject.GetComponent<CharacterController>().enabled = true;
 
             Debug.Log("Game data loaded!");
@@ -67,6 +91,16 @@ public class GameSaveManager : MonoBehaviour
         {
             Debug.LogError("No save data to delete.");
         }
+    }
+
+    public void SaveButtonPressed()
+    {
+        SaveGame();
+    }
+
+    public void LoadButtonPressed()
+    {
+        LoadGame();
     }
 
     // SAVEING + LOADING using PlayerPrefs
@@ -110,16 +144,4 @@ public class GameSaveManager : MonoBehaviour
         Debug.Log("Data reset complete");
     }
 */
-
-    public void SaveButtonPressed()
-    {
-        SaveGame();
-    }
-
-    public void LoadButtonPressed()
-    {
-        LoadGame();
-    }
-
-    
 }
