@@ -6,27 +6,31 @@ using UnityEngine;
 public class LiftOffAnimator : MonoBehaviour
 {
     private Animator animator;
+    private EnemyController enemyController;
+    private Transform player;
     
     void Start()
     {
         animator = GetComponent<Animator>();
+        enemyController = transform.parent.GetComponent<EnemyController>();
+        player = enemyController.player;//.transform;
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if( Vector3.Distance(player.position, transform.position) < 2.1f )
         {
-            animator.SetInteger("AnimationState", 0); // idle test
-        }
+            // turn to face player
+            Vector3 targetPosition = new Vector3(player.position.x, transform.position.y, player.position.z);
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            animator.SetInteger("AnimationState", 1); // walking test
-        }
+            // look at target (player)
+            transform.LookAt(targetPosition);
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+            animator.SetInteger("AnimationState", 2); // punch if in range
+        }
+        else
         {
-            animator.SetInteger("AnimationState", 2); // hook punch test
+            animator.SetInteger("AnimationState", 1); // go back to walking when not in range
         }
     }
 }
