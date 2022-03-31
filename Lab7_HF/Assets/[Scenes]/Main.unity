@@ -4166,7 +4166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -5157,7 +5157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -7059,6 +7059,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7230576450751918447, guid: 2373e76686cec054891deeb8ab16d570,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7230576451132101440, guid: 2373e76686cec054891deeb8ab16d570,
         type: 3}
       propertyPath: m_Name
@@ -7246,6 +7251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7230576452161949403, guid: 2373e76686cec054891deeb8ab16d570,
         type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230576452161949403, guid: 2373e76686cec054891deeb8ab16d570,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7278,6 +7288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230576452458436385, guid: 2373e76686cec054891deeb8ab16d570,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7230576452458436385, guid: 2373e76686cec054891deeb8ab16d570,
         type: 3}
@@ -7328,6 +7343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: A-Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230576452633513224, guid: 2373e76686cec054891deeb8ab16d570,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7230576452633513238, guid: 2373e76686cec054891deeb8ab16d570,
         type: 3}
