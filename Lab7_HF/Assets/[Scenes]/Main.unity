@@ -167,27 +167,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1990281449}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.445
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0012402534
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.552989
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
@@ -197,17 +197,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
@@ -227,10 +227,54 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 89ce13c6a625181449f9e89ca647ef86,
         type: 3}
       propertyPath: m_Name
-      value: LiftOff@T-Pose
+      value: LiftOffBody
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89ce13c6a625181449f9e89ca647ef86, type: 3}
+--- !u!4 &39824080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89ce13c6a625181449f9e89ca647ef86,
+    type: 3}
+  m_PrefabInstance: {fileID: 39824079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &39824081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 89ce13c6a625181449f9e89ca647ef86,
+    type: 3}
+  m_PrefabInstance: {fileID: 39824079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &39824082
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39824081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a120e4fb2372e14fbf5764c8825c717, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &39824083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39824081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4128fbc6549d9aa42800f240ef062003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &41360309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8441323026936339152, guid: dd0f24a62f8fe404c86156442b244f72,
@@ -6040,6 +6084,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967078247}
   m_CullTransparentMesh: 1
+--- !u!1 &1990281448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1990281449}
+  m_Layer: 0
+  m_Name: LiftOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1990281449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990281448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.565, y: 0, z: -3.686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 39824080}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2059945844
 PrefabInstance:
   m_ObjectHideFlags: 0
