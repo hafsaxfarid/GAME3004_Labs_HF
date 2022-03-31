@@ -2,8 +2,8 @@
     "m_SelectedDeviceId": "emulator-5554",
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
-        "name": "ca.hxf.lab6_hf",
-        "processId": 3154,
+        "name": "ca.hxf.lab7_hf",
+        "processId": 3987,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,24 @@
             "deviceId": "emulator-5554",
             "name": "ca.hxf.lab6_hf",
             "processId": 3154,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.hxf.lab6_hf",
+            "processId": 3534,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.hxf.lab6_hf",
+            "processId": 3709,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.hxf.lab7_hf",
+            "processId": 3987,
             "exited": false
         }
     ],
