@@ -28,14 +28,44 @@ public class MapGenerator : MonoBehaviour
     [Header("Grid")]
     public List<GameObject> grid;
 
+    private int startWidth;
+    private int startHeight;
+    private int startDepth;
+    private float startMin;
+    private float startMax;
+
     void Start()
     {
-        Regenerate();
+        Generate();
     }
     
     void Update()
     {
-        
+        if(width != startWidth || height != startHeight || depth != startDepth || min != startMin || max != startMax)
+        {
+            Generate();
+        }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            Generate();
+        }
+    }
+
+    private void Generate()
+    {
+        Initialize();
+        Reset();
+        Regenerate();
+    }
+
+    private void Initialize()
+    {
+        startWidth = width;
+        startHeight = height;
+        startDepth = depth;
+        startMin = min;
+        startMax = max;
     }
 
     private void Regenerate()
@@ -54,7 +84,7 @@ public class MapGenerator : MonoBehaviour
                 for (int x = 0; x < width; x++)
                 {
                     var perlinValue = Mathf.PerlinNoise( (x + offsetX)/randomScale, (z + offsetZ) / randomScale) * depth * 0.5f ;
-                    Debug.Log("Y Val: " + y + " Perlin Value: " + perlinValue);
+                    //Debug.Log("Y Val: " + y + " Perlin Value: " + perlinValue);
 
                     if(y < perlinValue)
                     {
@@ -69,6 +99,14 @@ public class MapGenerator : MonoBehaviour
             } // z - depth
         
         } // y - height
+    } // end of regenerate function
 
+    private void Reset()
+    {
+        foreach(var tile in grid)
+        {
+            Destroy(tile);
+        }
+        grid.Clear();   
     }
 }

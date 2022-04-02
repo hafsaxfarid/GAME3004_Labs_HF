@@ -168,9 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f03aba111f49d48842680489b74c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 8
-  height: 30
-  depth: 30
+  width: 32
+  height: 12
+  depth: 32
   min: 16
   max: 24
   tileParent: {fileID: 1865822335}
@@ -913,7 +913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273784188}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 7, y: 20, z: -15}
+  m_LocalPosition: {x: 16, y: 20, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
