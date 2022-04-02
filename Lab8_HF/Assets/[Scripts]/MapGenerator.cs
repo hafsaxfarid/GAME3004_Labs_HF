@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
 {
+    [Header("Player Referances")]
+    public Transform player;
+    public Transform spawnPoint;
+
     [Header("World Properties")]
     [Range(8, 64)]
     public int width = 8;
@@ -58,6 +62,7 @@ public class MapGenerator : MonoBehaviour
         Reset();
         Regenerate();
         DisableCollidersAndMeshRenderers();
+        PositionPlayer();
     }
 
     private void Initialize()
@@ -151,4 +156,11 @@ public class MapGenerator : MonoBehaviour
 
     } // function end
 
+    private void PositionPlayer()
+    {
+        player.gameObject.GetComponent<CharacterController>().enabled = false;
+        player.position = new Vector3(width * 0.5f, height + 5f, depth * 0.5f);
+        spawnPoint.position = player.position;
+        player.gameObject.GetComponent<CharacterController>().enabled = true;
+    }
 }
