@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 20
+  controlID: 24
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 21
+  controlID: 25
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 22
+  controlID: 26
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -622,18 +622,18 @@ MonoBehaviour:
       m_ExpandedIDs: 20fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: MapGenerator
-        m_OriginalName: MapGenerator
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 28496
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 12}
       m_SearchString: 
@@ -902,9 +902,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 14.205522, y: 18.8079, z: -13.235365}
+    m_Target: {x: 11.607983, y: 12.7043915, z: 7.7205963}
     speed: 2
-    m_Value: {x: 14.205522, y: 18.8079, z: -13.235365}
+    m_Value: {x: 11.607983, y: 12.7043915, z: 7.7205963}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -951,13 +951,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.25791883, y: -0.030428141, z: 0.0081271315, w: 0.9656531}
+    m_Target: {x: 0.20068607, y: 0.6261731, z: -0.17127769, w: 0.7336868}
     speed: 2
-    m_Value: {x: 0.2636953, y: -0.031824928, z: 0.008705106, w: 0.9640416}
+    m_Value: {x: 0.20241052, y: 0.6319656, z: -0.17592251, w: 0.7271181}
   m_Size:
-    m_Target: 5.1719975
+    m_Target: 19.56679
     speed: 2
-    m_Value: 5.1719975
+    m_Value: 19.56679
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1066,21 +1066,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/[Scripts]
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/[Scripts]
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Admin PC\Desktop\GAME3004_Labs_HF\Lab8_HF
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 68}
-    m_SelectedIDs: aa770000
-    m_LastClickedID: 30634
+    scrollPos: {x: 0, y: 63}
+    m_SelectedIDs: 9e770000
+    m_LastClickedID: 30622
     m_ExpandedIDs: 0000000002760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

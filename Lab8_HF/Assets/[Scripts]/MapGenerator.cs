@@ -57,6 +57,7 @@ public class MapGenerator : MonoBehaviour
         Initialize();
         Reset();
         Regenerate();
+        DisableCollidersAndMeshRenderers();
     }
 
     private void Initialize()
@@ -103,10 +104,51 @@ public class MapGenerator : MonoBehaviour
 
     private void Reset()
     {
-        foreach(var tile in grid)
+        var size = grid.Count;
+
+        for(int i = 0; i < size; i++)
         {
-            Destroy(tile);
+            Destroy(grid[i]);
         }
         grid.Clear();   
     }
+
+    private void DisableCollidersAndMeshRenderers()
+    {
+        var normalArray = new Vector3[] 
+        {Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
+
+        List<GameObject> disabledTiles = new List<GameObject>();
+
+        // marks the tile that is in the grid internally
+        foreach(var tile in grid)
+        {
+            int collisionCounter = 0;
+
+            for(int i = 0; i < normalArray.Length; i++)
+            {
+                if(Physics.Raycast(tile.transform.position, normalArray[i],
+                    tile.transform.localScale.magnitude * 0.3f))
+                {
+                    collisionCounter++;
+                }
+            }
+
+            if(collisionCounter > 5)
+            {
+                disabledTiles.Add(tile);
+            }
+        } // for loop end
+        
+        foreach(var tile in disabledTiles)
+        {
+            var boxCollider = tile.GetComponent<BoxCollider>();
+            var meshRenderer = tile.GetComponent<MeshRenderer>();
+
+            boxCollider.enabled = false;
+            meshRenderer.enabled = false;
+        }
+
+    } // function end
+
 }
