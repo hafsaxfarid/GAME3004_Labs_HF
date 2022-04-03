@@ -59,9 +59,10 @@ public class MapGenerator : MonoBehaviour
     private void Generate()
     {
         Initialize();
-        Reset();
+        ResetMap();
         Regenerate();
-        DisableCollidersAndMeshRenderers();
+        //DisableCollidersAndMeshRenderers();
+        RemoveInternalTiles();
         PositionPlayer();
     }
 
@@ -107,12 +108,14 @@ public class MapGenerator : MonoBehaviour
         } // y - height
     } // end of regenerate function
 
-    private void Reset()
+    private void ResetMap()
     {
         var size = grid.Count;
 
         for(int i = 0; i < size; i++)
         {
+            grid[i].GetComponent<BoxCollider>().enabled = false;
+
             Destroy(grid[i]);
         }
         grid.Clear();   
@@ -154,6 +157,42 @@ public class MapGenerator : MonoBehaviour
             meshRenderer.enabled = false;
         }
 
+    } // function end
+
+    private void RemoveInternalTiles()
+    {
+        var normalArray = new Vector3[]
+        {Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
+
+        List<GameObject> tilesToBeRemoved = new List<GameObject>();
+
+        // marks the tile that is in the grid internally
+        foreach (var tile in grid)
+        {
+            int collisionCounter = 0;
+
+            for (int i = 0; i < normalArray.Length; i++)
+            {
+                if (Physics.Raycast(tile.transform.position, normalArray[i],
+                    tile.transform.localScale.magnitude * 0.3f))
+                {
+                    collisionCounter++;
+                }
+            }
+
+            if (collisionCounter > 5)
+            {
+                tilesToBeRemoved.Add(tile);
+            }
+        } // for loop end
+
+        var size = tilesToBeRemoved.Count;
+
+        for(int i = 0; i < size; i++)
+        {
+            grid.Remove(tilesToBeRemoved[i]);
+            Destroy(tilesToBeRemoved[i].gameObject);
+        }
     } // function end
 
     private void PositionPlayer()
