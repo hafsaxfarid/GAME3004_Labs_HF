@@ -170,13 +170,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 669340766}
   spawnPoint: {fileID: 709331245}
-  width: 32
-  height: 16
-  depth: 32
+  width: 64
+  height: 32
+  depth: 64
   min: 16
-  max: 24
+  max: 32
   tileParent: {fileID: 1865822335}
-  threeDTile: {fileID: 5830276060630193713, guid: 716451d02494db942976322855d48d36,
+  threeDTile: {fileID: 4173020392568406771, guid: f32932ae48332824c9a60adc6ebcf45d,
     type: 3}
   grid: []
 --- !u!1 &16903444
