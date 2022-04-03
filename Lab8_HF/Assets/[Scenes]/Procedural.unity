@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.03
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -170,13 +170,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 669340766}
   spawnPoint: {fileID: 709331245}
-  width: 64
-  height: 32
-  depth: 64
+  width: 32
+  height: 16
+  depth: 32
   min: 16
   max: 32
   tileParent: {fileID: 1865822335}
-  threeDTile: {fileID: 4173020392568406771, guid: f32932ae48332824c9a60adc6ebcf45d,
+  threeDTile: {fileID: 5927225113074197133, guid: c4ccc03d131efb849a5d32c9971c75c0,
     type: 3}
   grid: []
 --- !u!1 &16903444
@@ -6869,6 +6869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834354358173122012, guid: 8aa9c32f13cd4bb499deabe79babff1e,
         type: 3}
+      propertyPath: far clip plane
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834354358173122012, guid: 8aa9c32f13cd4bb499deabe79babff1e,
+        type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 1911
       objectReference: {fileID: 0}
@@ -6885,7 +6890,7 @@ PrefabInstance:
     - target: {fileID: 2834354358214280432, guid: 8aa9c32f13cd4bb499deabe79babff1e,
         type: 3}
       propertyPath: jumpHeight
-      value: 3.5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2834354358214280432, guid: 8aa9c32f13cd4bb499deabe79babff1e,
         type: 3}
